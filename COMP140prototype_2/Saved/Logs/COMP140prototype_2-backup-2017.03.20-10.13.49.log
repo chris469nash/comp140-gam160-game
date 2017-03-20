@@ -1,0 +1,980 @@
+﻿Log file open, 03/20/17 00:41:34
+LogInit:Display: Running engine for game: COMP140prototype_2
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2037375401) SRandInit(-2037375400).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.061958
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/UE_4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.20-00.41.35:000][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.20-00.41.35:000][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.20-00.41.35:305][  0]LogInit: Computer: DESKTOP-LQAQQ0C
+[2017.03.20-00.41.35:305][  0]LogInit: User: ChristopherNash
+[2017.03.20-00.41.35:305][  0]LogInit: CPU Page size=65536, Cores=2
+[2017.03.20-00.41.35:305][  0]LogInit: High frequency timer resolution =2.343752 MHz
+[2017.03.20-00.41.35:305][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.03.20-00.41.35:305][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.20-00.41.35:305][  0]LogMemory: Process Physical Memory: 190.00 MB used, 190.00 MB peak
+[2017.03.20-00.41.35:305][  0]LogMemory: Process Virtual Memory: 194.91 MB used, 194.91 MB peak
+[2017.03.20-00.41.35:305][  0]LogMemory: Physical Memory: 5837.50 MB used, 8056.13 MB total
+[2017.03.20-00.41.35:305][  0]LogMemory: Virtual Memory: 552.56 MB used, 134217728.00 MB total
+[2017.03.20-00.41.35:434][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.03.20-00.41.36:126][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.20-00.41.36:162][  0]LogD3D11RHI:    0. 'NVIDIA GeForce 940M' (Feature Level 11_0)
+[2017.03.20-00.41.36:162][  0]LogD3D11RHI:       2019/0/4028 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.20-00.41.36:169][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 520' (Feature Level 11_0)
+[2017.03.20-00.41.36:169][  0]LogD3D11RHI:       128/0/4028 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.20-00.41.36:171][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.20-00.41.36:171][  0]LogD3D11RHI:       0/0/4028 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.20-00.41.36:171][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.20-00.41.36:178][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.20-00.41.36:178][  0]LogD3D11RHI:     GPU DeviceId: 0x1347 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.20-00.41.36:178][  0]LogWindows: EnumDisplayDevices:
+[2017.03.20-00.41.36:178][  0]LogWindows:    0. 'Intel(R) HD Graphics 520' (P:1 D:1)
+[2017.03.20-00.41.36:178][  0]LogWindows:    1. 'Intel(R) HD Graphics 520' (P:0 D:0)
+[2017.03.20-00.41.36:179][  0]LogWindows:    2. 'Intel(R) HD Graphics 520' (P:0 D:0)
+[2017.03.20-00.41.36:179][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.03.20-00.41.36:179][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce 940M
+[2017.03.20-00.41.36:179][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.03.20-00.41.36:179][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.03.20-00.41.36:179][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.20-00.41.36:198][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.20-00.41.36:218][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.03.20-00.41.36:218][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Intermediate/Shaders/WorkingDirectory/228/).
+[2017.03.20-00.41.36:218][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/CHRIST~1/AppData/Local/Temp/UnrealShaderWorkingDir/E3F921AB4C90B4513D88A7B48621978A/'.
+[2017.03.20-00.41.36:218][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.20-00.41.42:672][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.20-00.41.42:683][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.20-00.41.42:694][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.20-00.41.42:707][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.20-00.41.42:717][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.20-00.41.42:729][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.20-00.41.42:738][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.20-00.41.42:748][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.20-00.41.42:758][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.20-00.41.42:768][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.20-00.41.42:776][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.20-00.41.42:795][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.20-00.41.42:795][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.20-00.41.42:796][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.20-00.41.43:133][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.20-00.41.43:144][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.20-00.41.43:223][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.20-00.41.43:279][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.20-00.41.43:400][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.20-00.41.43:400][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.20-00.41.45:937][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache: Loaded boot cache 9.37s 48MB C:/Users/Christopher Nash/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Christopher Nash/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.20-00.41.55:305][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.20-00.41.55:324][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.20-00.41.55:336][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Christopher Nash/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.20-00.42.04:061][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.20-00.42.04:062][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.20-00.42.04:429][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2017.03.20-00.42.04:429][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.20-00.42.04:429][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2017.03.20-00.42.05:387][  0]LogAssetRegistry: FAssetRegistry took 0.0231 seconds to start up
+[2017.03.20-00.42.05:603][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.213622 seconds
+[2017.03.20-00.42.05:609][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2017.03.20-00.42.05:609][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2017.03.20-00.42.05:609][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.20-00.42.05:617][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.20-00.42.09:391][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.20-00.42.09:391][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.20-00.42.43:669][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.20-00.42.44:620][  0]SourceControl: Info Source control is disabled
+[2017.03.20-00.42.45:137][  0]SourceControl: Info Source control is disabled
+[2017.03.20-00.42.45:180][  0]SourceControl: Info Source control is disabled
+[2017.03.20-00.42.45:226][  0]SourceControl: Info Source control is disabled
+[2017.03.20-00.42.46:192][  0]LogEngine: Initializing Engine...
+[2017.03.20-00.42.46:267][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.20-00.42.46:268][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2017.03.20-00.42.46:478][  0]LogAIModule: Creating AISystem for world NewWorld
+[2017.03.20-00.42.46:501][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.42.46:554][  0]LogInit: FAudioDevice initialized.
+[2017.03.20-00.42.46:583][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/Christopher Nash/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2017.03.20-00.42.46:592][  0]LogInit: Texture streaming: Enabled
+[2017.03.20-00.42.47:130][  0]LogInit: Transaction tracking system initialized
+[2017.03.20-00.42.47:278][  0]BlueprintLog: New page: Editor Load
+[2017.03.20-00.42.47:798][  0]LocalizationService: Info Localization service is disabled
+[2017.03.20-00.42.48:757][  0]LogConsoleResponse:Display: 
+[2017.03.20-00.42.51:394][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2017.03.20-00.42.51:395][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.20-00.42.52:198][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Content/' took 0.06s
+[2017.03.20-00.42.53:003][  0]SourceControl: Info Source control is disabled
+[2017.03.20-00.42.53:003][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Content/Tutorial/Maps/Prototype_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.20-00.42.53:065][  0]LightingResults: New page: Lighting Build
+[2017.03.20-00.42.53:078][  0]MapCheck: New page: Map Check
+[2017.03.20-00.42.53:078][  0]LightingResults: New page: Lighting Build
+[2017.03.20-00.42.56:377][  0]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.42.56:831][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.20-00.42.56:846][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.20-00.42.56:894][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.243ms to complete.
+[2017.03.20-00.42.56:894][  0]LogFileHelpers: Loading map 'Prototype_Level' took 3.891
+[2017.03.20-00.42.58:595][  0]LogCollectionManager: Loaded 0 collections in 0.002286 seconds
+[2017.03.20-00.42.59:095][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Saved/Collections/' took 0.01s
+[2017.03.20-00.42.59:095][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Content/Developers/ChristopherNash/Collections/' took 0.01s
+[2017.03.20-00.42.59:095][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Christopher Nash/Documents/Unreal Projects/COMP140prototype_2/Content/Collections/' took 0.01s
+[2017.03.20-00.42.59:095][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000010 seconds
+[2017.03.20-00.42.59:203][  0]LogContentBrowser: Native class hierarchy populated in 0.0663 seconds. Added 2047 classes and 369 folders.
+[2017.03.20-00.42.59:408][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.20-00.42.59:409][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.20-00.42.59:419][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0022 seconds. Added 12 classes and 0 folders.
+[2017.03.20-00.42.59:516][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2017.03.20-00.43.01:802][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0021 seconds. Added 0 classes and 0 folders.
+[2017.03.20-00.43.01:894][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.03.20-00.43.03:056][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.20-00.43.03:257][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.20-00.43.03:359][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
+[2017.03.20-00.43.03:360][  0]LogLoad: Full Startup: 90.85 seconds (BP compile: 0.78 seconds)
+[2017.03.20-00.43.03:360][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.20-00.43.03:360][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.20-00.43.03:378][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.20-00.43.03:384][  0]LogOcInput: OculusInput pre-init called
+[2017.03.20-00.43.03:579][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.20-00.43.04:898][  0]LogRenderer: Reallocating scene render targets to support 776x392 (Frame:2).
+[2017.03.20-00.43.06:262][  2]LogAssetRegistry: Asset discovery search completed in 60.8982 seconds
+[2017.03.20-00.43.06:262][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.03.20-00.43.06:262][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000022 seconds (updated 0 objects)
+[2017.03.20-00.43.08:929][118]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-00.43.09:237][118]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:43:09)
+[2017.03.20-00.43.09:237][118]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.43.09:274][118]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036921s)
+[2017.03.20-00.43.09:275][118]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.43.09:275][118]LogPlayLevel: PIE: World Init took: (0.001197s)
+[2017.03.20-00.43.09:276][118]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.038559s)
+[2017.03.20-00.43.09:367][118]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.43.09:380][118]LogInit: FAudioDevice initialized.
+[2017.03.20-00.43.09:675][118]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.43.09:812][118]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.43.09
+[2017.03.20-00.43.09:883][118]LogWorld: Bringing up level for play took: 0.083255
+[2017.03.20-00.43.10:274][118]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0020 seconds. Added 11 classes and 0 folders.
+[2017.03.20-00.43.10:543][118]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.43.10:576][118]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level 2.022
+[2017.03.20-00.43.59:382][864]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0026 seconds. Added 111 classes and 0 folders.
+[2017.03.20-00.44.44:785][313]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-00.44.44:785][313]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:44:44)
+[2017.03.20-00.44.44:785][313]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.44.44:790][313]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004457s)
+[2017.03.20-00.44.44:791][313]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.44.44:791][313]LogPlayLevel: PIE: World Init took: (0.001108s)
+[2017.03.20-00.44.44:791][313]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.005971s)
+[2017.03.20-00.44.44:890][313]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.44.44:900][313]LogInit: FAudioDevice initialized.
+[2017.03.20-00.44.44:941][313]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.44.44:945][313]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.44.44
+[2017.03.20-00.44.44:946][313]LogWorld: Bringing up level for play took: 0.004244
+[2017.03.20-00.44.44:948][313]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.44.45:097][313]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level 0.543
+[2017.03.20-00.44.45:124][313]LogRenderer: Reallocating scene render targets to support 1164x684 (Frame:2837).
+[2017.03.20-00.44.55:723][738]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-00.44.55:724][738]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:44:55)
+[2017.03.20-00.44.55:724][738]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.44.55:727][738]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003013s)
+[2017.03.20-00.44.55:727][738]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.44.55:728][738]LogPlayLevel: PIE: World Init took: (0.000868s)
+[2017.03.20-00.44.55:728][738]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.004182s)
+[2017.03.20-00.44.55:765][738]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.44.55:773][738]LogInit: FAudioDevice initialized.
+[2017.03.20-00.44.55:827][738]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.44.55:831][738]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.44.55
+[2017.03.20-00.44.55:831][738]LogWorld: Bringing up level for play took: 0.003989
+[2017.03.20-00.44.55:834][738]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.44.55:834][738]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level -0.72
+[2017.03.20-00.45.39:350][288]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.03.20-00.45.47:507][718]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-00.45.47:507][718]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:45:47)
+[2017.03.20-00.45.47:507][718]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.45.47:510][718]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002756s)
+[2017.03.20-00.45.47:511][718]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.45.47:511][718]LogPlayLevel: PIE: World Init took: (0.000939s)
+[2017.03.20-00.45.47:511][718]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.003999s)
+[2017.03.20-00.45.47:591][718]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.45.47:601][718]LogInit: FAudioDevice initialized.
+[2017.03.20-00.45.47:652][718]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.45.47:657][718]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.45.47
+[2017.03.20-00.45.47:657][718]LogWorld: Bringing up level for play took: 0.004162
+[2017.03.20-00.45.47:659][718]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.45.47:659][718]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level 1.106
+[2017.03.20-00.45.55:882][195]Cmd: DELETE
+[2017.03.20-00.45.55:882][195]Cmd: ACTOR DELETE
+[2017.03.20-00.45.56:024][195]LogEditorActor: Deleted Actor: Env_Lift_C
+[2017.03.20-00.45.56:085][195]LogEditorActor: Deleted 1 Actors (0.067 secs)
+[2017.03.20-00.47.06:699][215]LogEditorTransaction: Undo Rename Node
+[2017.03.20-00.47.09:985][394]LogEditorTransaction: Undo Collapses selected nodes into a single node
+[2017.03.20-00.47.36:603][882]LogEditorTransaction: Undo Rename Node
+[2017.03.20-00.47.36:972][889]LogEditorTransaction: Undo Collapses selected nodes into a single node
+[2017.03.20-00.49.41:893][761]LogEditorViewport: Clicking on Actor (LMB): Env_Lift_C (Env_Lift)
+[2017.03.20-00.49.47:612][ 32]0.170846
+[2017.03.20-00.49.47:613][ 32]0.243180
+[2017.03.20-00.49.47:623][ 33]0.250867
+[2017.03.20-00.49.47:639][ 34]0.318007
+[2017.03.20-00.49.47:656][ 35]0.365772
+[2017.03.20-00.49.47:672][ 36]0.449850
+[2017.03.20-00.49.47:689][ 37]0.525500
+[2017.03.20-00.49.47:706][ 38]0.627166
+[2017.03.20-00.49.47:722][ 39]0.773714
+[2017.03.20-00.49.47:739][ 40]0.899520
+[2017.03.20-00.49.47:755][ 41]1.039842
+[2017.03.20-00.49.47:773][ 42]1.262481
+[2017.03.20-00.49.47:789][ 43]1.373934
+[2017.03.20-00.49.47:806][ 44]1.404513
+[2017.03.20-00.49.47:822][ 45]1.377405
+[2017.03.20-00.49.47:839][ 46]1.246044
+[2017.03.20-00.49.47:856][ 47]1.040885
+[2017.03.20-00.49.47:872][ 48]0.781250
+[2017.03.20-00.49.47:889][ 49]0.604974
+[2017.03.20-00.49.47:905][ 50]0.584170
+[2017.03.20-00.49.47:922][ 51]0.750072
+[2017.03.20-00.49.47:939][ 52]0.905771
+[2017.03.20-00.49.48:006][ 56]0.927785
+[2017.03.20-00.49.48:022][ 57]0.845035
+[2017.03.20-00.49.48:039][ 58]0.731618
+[2017.03.20-00.49.48:056][ 59]0.649937
+[2017.03.20-00.49.48:072][ 60]0.612727
+[2017.03.20-00.49.48:089][ 61]0.608997
+[2017.03.20-00.49.48:106][ 62]0.631992
+[2017.03.20-00.49.48:122][ 63]0.710246
+[2017.03.20-00.49.48:139][ 64]0.793378
+[2017.03.20-00.49.48:155][ 65]0.900725
+[2017.03.20-00.49.48:172][ 66]1.039842
+[2017.03.20-00.49.48:189][ 67]1.119246
+[2017.03.20-00.49.48:206][ 68]1.183335
+[2017.03.20-00.49.48:223][ 69]1.228681
+[2017.03.20-00.49.48:270][ 70]1.275308
+[2017.03.20-00.49.48:321][ 71]1.285098
+[2017.03.20-00.49.48:845][ 87]1.347459
+[2017.03.20-00.49.48:846][ 87]1.365060
+[2017.03.20-00.49.48:869][ 88]1.421598
+[2017.03.20-00.49.48:871][ 88]1.452406
+[2017.03.20-00.49.48:884][ 89]1.490894
+[2017.03.20-00.49.48:901][ 90]1.535779
+[2017.03.20-00.49.48:953][ 91]1.625300
+[2017.03.20-00.49.49:003][ 92]1.572503
+[2017.03.20-00.49.49:053][ 93]1.632628
+[2017.03.20-00.49.49:104][ 94]1.588601
+[2017.03.20-00.49.49:136][ 95]1.327870
+[2017.03.20-00.49.49:158][ 96]1.050483
+[2017.03.20-00.49.49:180][ 97]0.862133
+[2017.03.20-00.49.49:181][ 97]0.759346
+[2017.03.20-00.49.49:200][ 98]0.568448
+[2017.03.20-00.49.49:219][ 99]0.518955
+[2017.03.20-00.49.49:242][100]0.710933
+[2017.03.20-00.49.49:268][101]1.193243
+[2017.03.20-00.49.49:284][102]1.385456
+[2017.03.20-00.49.49:301][103]1.650771
+[2017.03.20-00.49.49:318][104]1.762172
+[2017.03.20-00.49.49:368][105]1.978454
+[2017.03.20-00.49.49:419][106]1.831498
+[2017.03.20-00.49.49:470][107]1.072967
+[2017.03.20-00.49.49:522][108]1.164153
+[2017.03.20-00.49.49:552][109]1.510453
+[2017.03.20-00.49.49:573][110]1.691290
+[2017.03.20-00.49.49:574][110]1.777378
+[2017.03.20-00.49.49:592][111]1.947945
+[2017.03.20-00.49.49:610][112]2.097297
+[2017.03.20-00.49.49:627][113]2.156275
+[2017.03.20-00.49.49:644][114]2.096055
+[2017.03.20-00.49.49:644][114]2.034266
+[2017.03.20-00.49.49:660][115]1.826752
+[2017.03.20-00.49.49:677][116]1.547918
+[2017.03.20-00.49.49:694][117]1.237525
+[2017.03.20-00.49.49:711][118]0.968806
+[2017.03.20-00.49.49:727][119]0.745502
+[2017.03.20-00.49.49:771][120]0.877106
+[2017.03.20-00.49.49:821][121]0.923095
+[2017.03.20-00.49.51:197][166]1.020249
+[2017.03.20-00.49.51:968][197]0.309710
+[2017.03.20-00.49.52:021][198]0.477920
+[2017.03.20-00.49.52:023][198]0.564906
+[2017.03.20-00.49.52:043][199]0.745429
+[2017.03.20-00.49.52:064][200]0.956577
+[2017.03.20-00.49.52:083][201]1.129860
+[2017.03.20-00.49.52:099][202]1.230622
+[2017.03.20-00.49.52:115][203]1.266900
+[2017.03.20-00.49.52:131][204]1.281631
+[2017.03.20-00.49.52:148][205]1.296446
+[2017.03.20-00.49.52:149][205]1.303915
+[2017.03.20-00.49.52:165][206]1.311425
+[2017.03.20-00.49.52:166][206]1.318974
+[2017.03.20-00.49.52:181][207]1.334188
+[2017.03.20-00.49.52:198][208]1.341851
+[2017.03.20-00.49.52:279][211]1.349551
+[2017.03.20-00.49.52:333][212]1.320947
+[2017.03.20-00.49.52:795][235]1.314070
+[2017.03.20-00.49.52:828][236]1.315143
+[2017.03.20-00.49.52:834][236]1.323081
+[2017.03.20-00.49.52:868][237]1.332438
+[2017.03.20-00.49.52:898][238]1.340516
+[2017.03.20-00.49.52:934][239]1.348626
+[2017.03.20-00.49.52:987][240]1.366768
+[2017.03.20-00.49.53:041][241]1.362514
+[2017.03.20-00.49.53:074][243]1.356328
+[2017.03.20-00.49.53:107][245]1.347942
+[2017.03.20-00.49.53:124][246]1.341770
+[2017.03.20-00.49.53:157][248]1.335651
+[2017.03.20-00.49.53:191][250]1.329585
+[2017.03.20-00.49.53:207][251]1.315060
+[2017.03.20-00.49.53:685][271]1.321111
+[2017.03.20-00.49.53:686][271]1.318809
+[2017.03.20-00.49.53:701][272]1.325007
+[2017.03.20-00.49.53:702][272]1.316668
+[2017.03.20-00.49.53:717][273]1.322958
+[2017.03.20-00.49.53:734][274]1.329299
+[2017.03.20-00.49.53:767][276]1.335691
+[2017.03.20-00.49.53:817][279]1.342134
+[2017.03.20-00.49.53:901][284]1.340516
+[2017.03.20-00.49.54:101][288]1.332438
+[2017.03.20-00.49.54:192][293]1.339058
+[2017.03.20-00.49.54:208][294]1.345727
+[2017.03.20-00.49.54:225][295]1.344517
+[2017.03.20-00.49.54:242][296]1.351319
+[2017.03.20-00.49.54:259][297]1.343467
+[2017.03.20-00.50.05:559][811]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.20-00.50.05:561][811]LogPlayLevel: [PlayLevel] Compiling BP_Player1 before play...
+[2017.03.20-00.50.06:017][811]LogPlayLevel: PlayLevel: Blueprint regeneration took 458 ms (4 blueprints)
+[2017.03.20-00.50.06:018][811]LogPlayLevel: [PlayLevel] Compiling BP_Trap before play...
+[2017.03.20-00.50.06:090][811]LogPlayLevel: PlayLevel: Blueprint regeneration took 531 ms (4 blueprints)
+[2017.03.20-00.50.06:091][811]LogPlayLevel: [PlayLevel] Compiling Env_Lift before play...
+[2017.03.20-00.50.06:189][811]LogPlayLevel: PlayLevel: Blueprint regeneration took 630 ms (4 blueprints)
+[2017.03.20-00.50.06:190][811]LogPlayLevel: [PlayLevel] Compiling Widget_HUD before play...
+[2017.03.20-00.50.06:269][811]LogPlayLevel: PlayLevel: Blueprint regeneration took 709 ms (4 blueprints)
+[2017.03.20-00.50.06:335][811]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:50:06)
+[2017.03.20-00.50.06:335][811]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.50.06:338][811]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002865s)
+[2017.03.20-00.50.06:339][811]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.50.06:339][811]LogPlayLevel: PIE: World Init took: (0.001156s)
+[2017.03.20-00.50.06:340][811]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.004284s)
+[2017.03.20-00.50.06:383][811]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.50.06:393][811]LogInit: FAudioDevice initialized.
+[2017.03.20-00.50.06:448][811]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.50.06:452][811]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.50.06
+[2017.03.20-00.50.06:452][811]LogWorld: Bringing up level for play took: 0.003824
+[2017.03.20-00.50.06:455][811]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.50.06:455][811]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level -0.099
+[2017.03.20-00.50.11:670][ 47]LogEditorViewport: Clicking on Actor (LMB): Env_Lift_C (Env_Lift)
+[2017.03.20-00.50.14:605][205]0.104167
+[2017.03.20-00.50.14:705][207]0.538956
+[2017.03.20-00.50.14:759][208]1.129860
+[2017.03.20-00.50.14:764][208]1.175054
+[2017.03.20-00.50.14:769][208]1.220351
+[2017.03.20-00.50.14:812][209]1.290070
+[2017.03.20-00.50.21:296][477]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.20-00.50.21:296][477]PIE: New page: PIE session: Prototype_Level (20 Mar 2017 00:50:21)
+[2017.03.20-00.50.21:296][477]LogPlayLevel: Creating play world package: /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level
+[2017.03.20-00.50.21:300][477]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003493s)
+[2017.03.20-00.50.21:301][477]LogAIModule: Creating AISystem for world Prototype_Level
+[2017.03.20-00.50.21:301][477]LogPlayLevel: PIE: World Init took: (0.001297s)
+[2017.03.20-00.50.21:301][477]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tutorial/Maps/Prototype_Level.Prototype_Level to /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level (0.005097s)
+[2017.03.20-00.50.21:348][477]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.20-00.50.21:357][477]LogInit: FAudioDevice initialized.
+[2017.03.20-00.50.21:409][477]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2017.03.20-00.50.21:413][477]LogWorld: Bringing World /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level.Prototype_Level up for play (max tick rate 60) at 2017.03.20-00.50.21
+[2017.03.20-00.50.21:413][477]LogWorld: Bringing up level for play took: 0.003747
+[2017.03.20-00.50.21:416][477]PIE:Warning: Warning The widget 'Widget_HUD_C' was already added to the screen.
+[2017.03.20-00.50.21:416][477]PIE: Info Play in editor start time for /Game/Tutorial/Maps/UEDPIE_0_Prototype_Level 0.862
+[2017.03.20-00.50.43:616][746]LogEditorViewport: Clicking Background
+[2017.03.20-00.50.45:683][870]LogEditorViewport: Clicking on Actor (LMB): Env_Lift_C (Env_Lift)
+[2017.03.20-00.50.57:114][527]0.625000
+[2017.03.20-00.50.57:148][528]0.584170
+[2017.03.20-00.50.57:152][528]0.544165
+[2017.03.20-00.50.57:176][529]0.406784
+[2017.03.20-00.50.57:193][530]0.332845
+[2017.03.20-00.50.57:208][531]0.277365
+[2017.03.20-00.50.57:225][532]0.243180
+[2017.03.20-00.50.57:271][533]0.217506
+[2017.03.20-00.50.57:324][534]0.214745
+[2017.03.20-00.50.57:375][535]0.212459
+[2017.03.20-00.50.57:377][535]0.202255
+[2017.03.20-00.50.57:425][536]0.179820
+[2017.03.20-00.50.57:454][537]0.169571
+[2017.03.20-00.50.57:456][537]0.171796
+[2017.03.20-00.50.57:507][540]0.161710
+[2017.03.20-00.50.57:539][542]0.151669
+[2017.03.20-00.50.57:585][543]0.098821
+[2017.03.20-00.50.57:636][544]0.044194
+[2017.03.20-00.50.57:687][545]0.037558
+[2017.03.20-00.50.58:451][568]0.044194
+[2017.03.20-00.50.58:480][569]0.032940
+[2017.03.20-00.50.58:507][570]0.031250
+[2017.03.20-00.50.59:286][603]0.042949
+[2017.03.20-00.50.59:319][605]0.053115
+[2017.03.20-00.50.59:352][607]0.056095
+[2017.03.20-00.50.59:872][624]0.072917
+[2017.03.20-00.51.00:031][630]0.083982
+[2017.03.20-00.51.00:047][631]0.096037
+[2017.03.20-00.51.00:115][633]0.098821
+[2017.03.20-00.51.00:167][634]0.108753
+[2017.03.20-00.51.00:218][635]0.112191
+[2017.03.20-00.51.00:269][636]0.102592
+[2017.03.20-00.51.00:330][639]0.093170
+[2017.03.20-00.51.00:429][645]0.075116
+[2017.03.20-00.51.00:463][647]0.066699
+[2017.03.20-00.51.00:480][648]0.052083
+[2017.03.20-00.51.00:496][649]0.037558
+[2017.03.20-00.51.00:516][650]0.029463
+[2017.03.20-00.51.00:519][650]0.023292
+[2017.03.20-00.51.02:948][753]0.037558
+[2017.03.20-00.51.03:183][767]0.032940
+[2017.03.20-00.51.03:216][769]0.023292
+[2017.03.20-00.51.03:771][792]0.014731
+[2017.03.20-00.51.04:085][804]0.010417
+[2017.03.20-00.51.04:101][805]0.000000
+[2017.03.20-00.51.04:328][815]0.010417
+[2017.03.20-00.51.04:877][837]0.000000
+[2017.03.20-00.51.04:879][837]0.010417
+[2017.03.20-00.51.04:927][838]0.000000
+[2017.03.20-00.51.12:507][165]0.664466
+[2017.03.20-00.51.12:508][165]0.666178
+[2017.03.20-00.51.12:556][166]0.664466
+[2017.03.20-00.51.12:607][167]0.460223
+[2017.03.20-00.51.12:635][168]0.254303
+[2017.03.20-00.51.12:651][169]0.217506
+[2017.03.20-00.51.12:668][170]0.294628
+[2017.03.20-00.51.12:669][170]0.296280
+[2017.03.20-00.51.12:685][171]0.341215
+[2017.03.20-00.51.12:686][171]0.343592
+[2017.03.20-00.51.12:718][173]0.306363
+[2017.03.20-00.51.12:734][174]0.229403
+[2017.03.20-00.51.12:751][175]0.227503
+[2017.03.20-00.51.12:768][176]0.348141
+[2017.03.20-00.51.12:785][177]0.432135
+[2017.03.20-00.51.12:801][178]0.520938
+[2017.03.20-00.51.12:818][179]0.596303
+[2017.03.20-00.51.12:834][180]0.677083
+[2017.03.20-00.51.12:851][181]0.717541
+[2017.03.20-00.51.12:868][182]0.717541
+[2017.03.20-00.51.12:869][182]0.702256
+[2017.03.20-00.51.12:885][183]0.702565
+[2017.03.20-00.51.12:886][183]0.682192
+[2017.03.20-00.51.12:901][184]0.679962
+[2017.03.20-00.51.12:944][185]0.650270
+[2017.03.20-00.51.12:996][186]0.517175
+[2017.03.20-00.51.12:997][186]0.503137
+[2017.03.20-00.51.13:048][187]0.272630
+[2017.03.20-00.51.13:100][188]0.406784
+[2017.03.20-00.51.13:101][188]0.448401
+[2017.03.20-00.51.13:126][189]0.545261
+[2017.03.20-00.51.13:143][190]0.621518
+[2017.03.20-00.51.13:160][191]0.673146
+[2017.03.20-00.51.13:176][192]0.728869
+[2017.03.20-00.51.13:193][193]0.752600
+[2017.03.20-00.51.13:210][194]0.758345
+[2017.03.20-00.51.13:226][195]0.719580
+[2017.03.20-00.51.13:243][196]0.669590
+[2017.03.20-00.51.13:259][197]0.646841
+[2017.03.20-00.51.13:276][198]0.654180
+[2017.03.20-00.51.13:277][198]0.693784
+[2017.03.20-00.51.13:293][199]0.745356
+[2017.03.20-00.51.13:309][200]0.738335
+[2017.03.20-00.51.13:326][201]0.719278
+[2017.03.20-00.51.13:343][202]0.695347
+[2017.03.20-00.51.13:360][203]0.607391
+[2017.03.20-00.51.13:376][204]0.460223
+[2017.03.20-00.51.13:393][205]0.237537
+[2017.03.20-00.51.13:410][206]0.126724
+[2017.03.20-00.51.13:455][207]0.396655
+[2017.03.20-00.51.13:507][208]0.613081
+[2017.03.20-00.51.13:559][209]0.805930
+[2017.03.20-00.51.13:611][210]0.868840
+[2017.03.20-00.51.13:957][229]0.839625
+[2017.03.20-00.51.13:958][229]0.825024
+[2017.03.20-00.51.14:007][230]0.652935
+[2017.03.20-00.51.14:060][231]0.611131
+[2017.03.20-00.51.14:061][231]0.606050
+[2017.03.20-00.51.14:112][232]0.569021
+[2017.03.20-00.51.14:143][233]0.528075
+[2017.03.20-00.51.14:161][234]0.524260
+[2017.03.20-00.51.14:176][235]0.520625
+[2017.03.20-00.51.14:193][236]0.507325
+[2017.03.20-00.51.14:209][237]0.497498
+[2017.03.20-00.51.14:226][238]0.487696
+[2017.03.20-00.51.14:293][242]0.468171
+[2017.03.20-00.51.14:310][243]0.454768
+[2017.03.20-00.51.14:326][244]0.435262
+[2017.03.20-00.51.14:343][245]0.379172
+[2017.03.20-00.51.14:359][246]0.366365
+[2017.03.20-00.51.14:376][247]0.343592
+[2017.03.20-00.51.14:393][248]0.320894
+[2017.03.20-00.51.14:409][249]0.300643
+[2017.03.20-00.51.14:454][250]0.103120
+[2017.03.20-00.51.14:506][251]0.085898
+[2017.03.20-00.51.14:562][252]0.150231
+[2017.03.20-00.51.14:637][254]0.139754
+[2017.03.20-00.51.14:640][254]0.149144
+[2017.03.20-00.51.14:654][255]0.145087
+[2017.03.20-00.51.14:670][256]0.141682
+[2017.03.20-00.51.14:687][257]0.138976
+[2017.03.20-00.51.14:703][258]0.149144
+[2017.03.20-00.51.20:419][511]0.127152
+[2017.03.20-00.51.20:452][513]0.121478
+[2017.03.20-00.51.20:454][513]0.116462
+[2017.03.20-00.51.20:469][514]0.102592
+[2017.03.20-00.51.20:470][514]0.083982
+[2017.03.20-00.51.20:485][515]0.208594
+[2017.03.20-00.51.20:502][516]0.386541
+[2017.03.20-00.51.20:519][517]0.596303
+[2017.03.20-00.51.20:535][518]0.759560
+[2017.03.20-00.51.20:552][519]0.917909
+[2017.03.20-00.51.20:569][520]1.012991
+[2017.03.20-00.51.20:586][521]1.040207
+[2017.03.20-00.51.20:601][522]1.031460
+[2017.03.20-00.51.20:618][523]0.977226
+[2017.03.20-00.51.20:635][524]0.847855
+[2017.03.20-00.51.20:652][525]0.744846
+[2017.03.20-00.51.20:668][526]0.629584
+[2017.03.20-00.51.20:669][526]0.584170
+[2017.03.20-00.51.20:685][527]0.517489
+[2017.03.20-00.51.20:702][528]0.472324
+[2017.03.20-00.51.20:719][529]0.503460
+[2017.03.20-00.51.20:735][530]0.551592
+[2017.03.20-00.51.20:755][531]0.648850
+[2017.03.20-00.51.20:775][532]0.741415
+[2017.03.20-00.51.20:791][533]0.755837
+[2017.03.20-00.51.20:828][534]0.781250
+[2017.03.20-00.51.20:830][534]0.781528
+[2017.03.20-00.51.20:878][535]0.768295
+[2017.03.20-00.51.20:930][536]0.760417
+[2017.03.20-00.51.20:982][537]0.735464
+[2017.03.20-00.51.20:987][537]0.734283
+[2017.03.20-00.51.21:018][538]0.814434
+[2017.03.20-00.51.21:050][539]0.886397
+[2017.03.20-00.51.21:076][540]0.926615
+[2017.03.20-00.51.21:091][541]0.975225
+[2017.03.20-00.51.21:107][542]0.993141
+[2017.03.20-00.51.21:125][543]1.015558
+[2017.03.20-00.51.21:141][544]1.020302
+[2017.03.20-00.51.21:158][545]1.025129
+[2017.03.20-00.51.21:175][546]1.030039
+[2017.03.20-00.51.21:191][547]1.044164
+[2017.03.20-00.51.21:208][548]1.058305
+[2017.03.20-00.51.21:241][550]1.063368
+[2017.03.20-00.51.21:533][564]1.054298
+[2017.03.20-00.51.21:535][564]1.049192
+[2017.03.20-00.51.21:582][565]0.878218
+[2017.03.20-00.51.21:634][566]0.743169
+[2017.03.20-00.51.21:665][567]0.679962
+[2017.03.20-00.51.21:681][568]0.676442
+[2017.03.20-00.51.21:698][569]0.655588
+[2017.03.20-00.51.21:715][570]0.656911
+[2017.03.20-00.51.21:731][571]0.657654
+[2017.03.20-00.51.21:748][572]0.668130
+[2017.03.20-00.51.21:764][573]0.679084
+[2017.03.20-00.51.21:765][573]0.684732
+[2017.03.20-00.51.21:781][574]0.681874
+[2017.03.20-00.51.21:798][575]0.687816
+[2017.03.20-00.51.21:814][576]0.693863
+[2017.03.20-00.51.21:848][578]0.700012
+[2017.03.20-00.51.21:864][579]0.712610
+[2017.03.20-00.51.21:881][580]0.710933
+[2017.03.20-00.51.21:897][581]0.724239
+[2017.03.20-00.51.21:915][582]0.737894
+[2017.03.20-00.51.21:931][583]0.744263
+[2017.03.20-00.51.21:975][584]0.751445
+[2017.03.20-00.51.22:026][585]0.758702
+[2017.03.20-00.51.22:077][586]0.803165
+[2017.03.20-00.51.22:079][586]0.810360
+[2017.03.20-00.51.22:127][587]0.848623
+[2017.03.20-00.51.22:157][588]0.872268
+[2017.03.20-00.51.22:158][588]0.880255
+[2017.03.20-00.51.22:173][589]0.888292
+[2017.03.20-00.51.22:190][590]0.896378
+[2017.03.20-00.51.22:340][599]0.904512
+[2017.03.20-00.51.22:373][601]0.920918
+[2017.03.20-00.51.22:390][602]0.935530
+[2017.03.20-00.51.22:407][603]0.981270
+[2017.03.20-00.51.22:647][609]0.987608
+[2017.03.20-00.51.22:664][610]0.995868
+[2017.03.20-00.51.22:681][611]1.010470
+[2017.03.20-00.51.22:697][612]1.033352
+[2017.03.20-00.51.22:714][613]1.087532
+[2017.03.20-00.51.22:730][614]1.141897
+[2017.03.20-00.51.22:747][615]1.150370
+[2017.03.20-00.51.22:881][623]1.141897
+[2017.03.20-00.51.22:899][624]1.139614
+[2017.03.20-00.51.22:914][625]1.131252
+[2017.03.20-00.51.22:931][626]1.114632
+[2017.03.20-00.51.22:973][627]1.088380
+[2017.03.20-00.51.23:024][628]1.017426
+[2017.03.20-00.51.23:075][629]1.002168
+[2017.03.20-00.51.23:206][634]1.009342
+[2017.03.20-00.51.23:223][635]1.001843
+[2017.03.20-00.51.23:239][636]0.994396
+[2017.03.20-00.51.23:256][637]0.994614
+[2017.03.20-00.51.23:273][638]0.987992
+[2017.03.20-00.51.23:289][639]0.980993
+[2017.03.20-00.51.23:306][640]0.981878
+[2017.03.20-00.51.23:323][641]0.997664
+[2017.03.20-00.51.23:339][642]0.998969
+[2017.03.20-00.51.23:373][644]1.000488
+[2017.03.20-00.51.23:374][644]1.008643
+[2017.03.20-00.51.23:406][646]1.010470
+[2017.03.20-00.51.23:423][647]1.012509
+[2017.03.20-00.51.23:439][648]1.000217
+[2017.03.20-00.51.23:456][649]0.996794
+[2017.03.20-00.51.23:473][650]1.005411
+[2017.03.20-00.51.23:489][651]0.999620
+[2017.03.20-00.51.23:526][653]1.002655
+[2017.03.20-00.51.23:529][653]0.997066
+[2017.03.20-00.51.23:546][654]1.000434
+[2017.03.20-00.51.23:562][655]1.004007
+[2017.03.20-00.51.23:599][656]0.992649
+[2017.03.20-00.51.23:649][657]0.980772
+[2017.03.20-00.51.23:700][658]0.985188
+[2017.03.20-00.51.23:751][659]0.988212
+[2017.03.20-00.51.23:779][660]0.981823
+[2017.03.20-00.51.23:798][661]0.975837
+[2017.03.20-00.51.23:799][661]0.985848
+[2017.03.20-00.51.23:815][662]0.980330
+[2017.03.20-00.51.23:832][663]0.990405
+[2017.03.20-00.51.23:848][664]0.987827
+[2017.03.20-00.51.23:864][665]0.997936
+[2017.03.20-00.51.23:881][666]0.995487
+[2017.03.20-00.51.23:898][667]1.003304
+[2017.03.20-00.51.23:914][668]0.993250
+[2017.03.20-00.51.23:931][669]0.985848
+[2017.03.20-00.51.23:948][670]0.981159
+[2017.03.20-00.51.23:949][670]0.979388
+[2017.03.20-00.51.23:964][671]1.000217
+[2017.03.20-00.51.23:965][671]1.003466
+[2017.03.20-00.51.23:981][672]1.013794
+[2017.03.20-00.51.23:998][673]1.023646
+[2017.03.20-00.51.24:015][674]1.036026
+[2017.03.20-00.51.24:031][675]1.041667
+[2017.03.20-00.51.24:048][676]1.044631
+[2017.03.20-00.51.24:358][686]1.050845
+[2017.03.20-00.51.24:375][687]1.057433
+[2017.03.20-00.51.24:391][688]1.047587
+[2017.03.20-00.51.24:408][689]1.054607
+[2017.03.20-00.51.24:425][690]1.058253
+[2017.03.20-00.51.24:441][691]1.048519
+[2017.03.20-00.51.24:458][692]1.056149
+[2017.03.20-00.51.24:474][693]1.060097
+[2017.03.20-00.51.24:491][694]1.054556
+[2017.03.20-00.51.24:508][695]1.066831
+[2017.03.20-00.51.24:509][695]1.067442
+[2017.03.20-00.51.24:525][696]1.058305
+[2017.03.20-00.51.24:525][696]1.061172
+[2017.03.20-00.51.24:541][697]1.063317
+[2017.03.20-00.51.24:559][698]1.068914
+[2017.03.20-00.51.24:576][699]1.073725
+[2017.03.20-00.51.24:591][700]1.086983
+[2017.03.20-00.51.24:608][701]1.085784
+[2017.03.20-00.51.24:652][702]1.092609
+[2017.03.20-00.51.24:653][702]1.099489
+[2017.03.20-00.51.24:703][703]1.149898
+[2017.03.20-00.51.24:756][704]1.166108
+[2017.03.20-00.51.24:807][705]1.159249
+[2017.03.20-00.51.25:066][720]1.167132
+[2017.03.20-00.51.25:084][721]1.160372
+[2017.03.20-00.51.25:160][724]1.176346
+[2017.03.20-00.51.25:213][725]1.169732
+[2017.03.20-00.51.25:215][725]1.177821
+[2017.03.20-00.51.25:318][727]1.185946
+[2017.03.20-00.51.25:357][729]1.194106
+[2017.03.20-00.51.25:373][730]1.195922
+[2017.03.20-00.51.25:390][731]1.189600
+[2017.03.20-00.51.25:406][732]1.191696
+[2017.03.20-00.51.25:423][733]1.200089
+[2017.03.20-00.51.25:440][734]1.202437
+[2017.03.20-00.51.25:456][735]1.196421
+[2017.03.20-00.51.25:473][736]1.199048
+[2017.03.20-00.51.25:506][738]1.207660
+[2017.03.20-00.51.25:573][742]1.196104
+[2017.03.20-00.51.25:590][743]1.184801
+[2017.03.20-00.51.25:607][744]1.147347
+[2017.03.20-00.51.25:651][745]1.046499
+[2017.03.20-00.51.25:704][746]0.923389
+[2017.03.20-00.51.25:756][747]0.885417
+[2017.03.20-00.51.25:838][749]0.903132
+[2017.03.20-00.51.25:843][749]0.898796
+[2017.03.20-00.51.25:876][750]0.917613
+[2017.03.20-00.51.26:041][760]0.927610
+[2017.03.20-00.51.26:058][761]0.927142
+[2017.03.20-00.51.26:074][762]0.937558
+[2017.03.20-00.51.26:091][763]0.948146
+[2017.03.20-00.51.26:260][767]0.958560
+[2017.03.20-00.51.28:805][879]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Block_A_1)
+[2017.03.20-00.51.30:794][954]LogEditorViewport: Clicking Background
+[2017.03.20-00.51.35:329][201]LogEditorViewport: Clicking Background
+[2017.03.20-00.51.35:896][235]LogEditorViewport: Clicking on Actor (LMB): Env_Lift_C (Env_Lift)
+[2017.03.20-00.51.36:596][276]LogEditorViewport: Clicking Background
+[2017.03.20-00.51.41:187][502]LogEditorViewport: Clicking on Actor (LMB): Env_Lift_C (Env_Lift)
+[2017.03.20-00.51.47:784][779]LogEditorViewport: Clicking Background
+[2017.03.20-00.51.50:090][898]Cmd: SELECT NONE
+[2017.03.20-00.51.52:972][970]Cmd: QUIT_EDITOR
+[2017.03.20-00.51.53:311][970]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.20-00.51.53:366][970]LogExit: Preparing to exit.
+[2017.03.20-00.51.54:109][970]LogEditor:Warning: Warning: A transaction is active
+[2017.03.20-00.51.54:109][970]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 1
+SessionName : 
+Reason      : Shutdown
+
+Purging the undo buffer...
+
+[2017.03.20-00.51.54:109][970]LogExit: Editor shut down
+[2017.03.20-00.51.54:109][970]LogExit: Transaction tracking system shut down
+[2017.03.20-00.51.54:257][970]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.20-00.51.54:257][970]LogExit: Object subsystem successfully closed.
+[2017.03.20-00.51.54:268][970]LogD3D11RHI: Shutdown
+[2017.03.20-00.51.54:268][970]LogD3D11RHI: CleanupD3DDevice
+[2017.03.20-00.51.54:388][970]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2017.03.20-00.51.54:402][970]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2017.03.20-00.51.54:404][970]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2017.03.20-00.51.54:405][970]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2017.03.20-00.51.54:728][970]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2017.03.20-00.51.54:729][970]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2017.03.20-00.51.54:730][970]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2017.03.20-00.51.54:731][970]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2017.03.20-00.51.54:775][970]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2017.03.20-00.51.54:776][970]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2017.03.20-00.51.54:777][970]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2017.03.20-00.51.54:778][970]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2017.03.20-00.51.54:779][970]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2017.03.20-00.51.54:882][970]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2017.03.20-00.51.54:882][970]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2017.03.20-00.51.54:883][970]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2017.03.20-00.51.54:884][970]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2017.03.20-00.51.54:885][970]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2017.03.20-00.51.54:887][970]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2017.03.20-00.51.54:888][970]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2017.03.20-00.51.54:890][970]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2017.03.20-00.51.54:893][970]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2017.03.20-00.51.54:894][970]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2017.03.20-00.51.54:995][970]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2017.03.20-00.51.54:995][970]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2017.03.20-00.51.54:995][970]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2017.03.20-00.51.54:995][970]LogModuleManager: Shutting down and abandoning module Media (90)
+[2017.03.20-00.51.54:995][970]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2017.03.20-00.51.54:996][970]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2017.03.20-00.51.54:996][970]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2017.03.20-00.51.54:996][970]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2017.03.20-00.51.54:997][970]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2017.03.20-00.51.54:998][970]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2017.03.20-00.51.54:998][970]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2017.03.20-00.51.54:998][970]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2017.03.20-00.51.54:998][970]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2017.03.20-00.51.54:999][970]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2017.03.20-00.51.54:999][970]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2017.03.20-00.51.54:999][970]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module Core (64)
+[2017.03.20-00.51.55:012][970]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2017.03.20-00.51.55:015][970]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2017.03.20-00.51.55:172][970]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2017.03.20-00.51.55:172][970]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2017.03.20-00.51.55:172][970]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2017.03.20-00.51.55:173][970]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2017.03.20-00.51.55:241][970]LogDerivedDataCache: Shutdown
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2017.03.20-00.51.55:241][970]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2017.03.20-00.51.55:242][970]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2017.03.20-00.51.55:243][970]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2017.03.20-00.51.55:244][970]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2017.03.20-00.51.55:244][970]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2017.03.20-00.51.55:244][970]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2017.03.20-00.51.55:244][970]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2017.03.20-00.51.56:750][970]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2017.03.20-00.51.56:751][970]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2017.03.20-00.51.56:751][970]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2017.03.20-00.51.56:751][970]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.03.20-00.51.56:752][970]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.03.20-00.51.56:752][970]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.03.20-00.51.56:752][970]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.03.20-00.51.56:763][970]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.03.20-00.51.56:764][970]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.03.20-00.51.56:764][970]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.03.20-00.51.56:764][970]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.03.20-00.51.56:768][970]LogExit: Exiting.
+[2017.03.20-00.51.56:778][970]Log file closed, 03/20/17 00:51:56
